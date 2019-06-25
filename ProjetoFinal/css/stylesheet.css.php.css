@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.erromsg {
+    color: red;
+    font-size: 12px;
+    
+}
+.erromsga {
+    color: green;
+    font-size: 12px;
+}
+
+/* logotipo da página */
+.classylogo {
+    width: 200px;
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-bottom: 10px;
+}
+/* end do logotipo da página */
+
+/* navigation bar */
+.classynavbar {
+    width: 100%;
+    height: 70px;
+    display: inline;
+}
+.classynavbar a {
+    text-align: center;
+    text-decoration: none;
+}
+/* navigation bar */
+
+/* nav text */
+.inicio {
+    color: #0C1941;
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+.registo {
+    color: #0C1941;
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+.lingua {
+    color: #0C1941;
+    float: right;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+
+.anglearrowdown {
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+}
+.arrowcriar{
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+}
+/* end nav text */
+
+
+
+
+/* intro div info*/
+.introdiv {
+    background-color: #0C1941;
+    text-align: center;
+}
+.introdivtitle {
+    padding-top: 60px;
+    color: #fff;
+    font-size: 22px;
+}
+.introdiv {
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 50px;
+}
+.aquihigh {
+    color: #F15A24;
+}
+.aquihigha {
+    color: #fff;
+}
+
+/* end intro div info*/
+
+
+
+/* footer info */
+.footer {
+    background-color: #0C1941;
+    position: absolute;
+    width: 100%;
+}
+.doubleuparrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.whitelogo {
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.classyfootinfo {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-right: 0;
+}
+.classyfootsocialinfo {
+    color: #fff;
+    text-align: right;
+    padding-right: 70px;
+    padding-bottom: 40px;
+}
+.socialtitle {
+    font-size: 14px;
+    padding-right: 5px;
+}
+.extrainfo {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+/* footer info */
+
+.plusbutton {
+    margin-right: 4px;
+    margin-bottom: 2px;
+    width: 10px;
+    height: 10px;
+}
+
+/* land main box*/
+.landbox{
+    opacity: 0.9;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0C1941;
+    margin-top: 7%;
+    margin-bottom: 12%;
+}
+.landback {
+    background-image: url(../Imagens/students.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.landtitle {
+    font-size: 40px;
+    color: #fff;
+    padding-top: 4%;
+}
+/* end land main box*/
+
+/* box form */
+.inseririnfo {
+    margin-right: 5px;
+    border: none;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.inseririnfocity {
+    margin-right: 5px;
+    padding-left: 20px;
+    border: none;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding-left: 30px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* end box form */
+
+/* botão procurar */
+.procurarbtn {
+    margin-right: 5px;
+    padding-left: 20px;
+    border: none;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F15A41;
+    color: #fff;
+}
+/* end botão procurar */
+
+.destaquetitle {
+    text-align: center;
+    font-size: 22px;
+    color: #F15A41;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.destaquetitle1 {
+    text-align: center;
+    font-size: 16px;
+    color: #F15A41;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+
+.placeA {
+    color: red;
+}
+
+
+
+
+
+
+
+.places {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.placeimg {
+    width: 50%;
+    padding-left: 15%;
+    padding-right: 5%;
+
+}
+.placeinfo {
+    color: #0C1941;
+    float: right;
+    height: 100%;
+    margin: 0;
+    margin-right: 15%;
+    width: 30%;
+    padding-right: 5%;
+}
+.emailhigh {
+    color: #F15A41;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .places {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    
+    .placeimg {
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 20%;
+        
+    
+    }
+    .placeinfo {
+        font-size: 12px;
+        color: #0C1941;
+        text-align: center;
+        margin-bottom: 20px;
+        margin: 0;
+        width: 100%;
+        
+    }
+
+    .classylogo {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    }
+
+    .classynavbar {
+        width: 100%;
+        height: 70px;
+        display: inline;
+        
+    }
+    .classynavbar a {
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    /* nav text iphone 7*/
+    .inicio {
+        float: left;
+        width: 33%;
+        text-align: center;
+        color: #0C1941;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .registo {
+        float: 0;
+        width: 33%;
+        text-align: center;
+        color: #0C1941;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .lingua {
+        float: right;
+        width: 33%;
+        color: #0C1941;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+
+    .anglearrowdown {
+        margin-left: 4px;
+        width: 5px;
+        height: 5px;
+    }
+    .arrowcriar{
+        margin-left: 4px;
+        width: 5px;
+        height: 5px;
+    }
+    /* end nav text */
+
+    .landbox{
+        border-radius: 5px;
+        border: none;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        background-color: #0C1941;
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+
+    .landtitle {
+        font-size: 24px;
+        color: #fff;
+        padding-top: 12%;
+    }
+    /* box form */
+    .inseririnfo {
+        width: 100%;
+        margin-right: 5px;
+        border: none;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .inseririnfocity {
+        width: 100%;
+        margin-right: 5px;
+        padding-left: 20px;
+        border: none;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+   /* end box form */
+
+    /* botão entrar */
+    .procurarbtn {
+        font-size: 12px;
+        border-radius: 10px;
+        border: none;
+        background-color: #F15A41;
+        color: #fff;
+        text-align: center;
+        margin-top: 10%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: none;
+    }
+    /* end botão entrar */
+
+    .introdivtitle {
+        font-size: 20px;
+        padding-top: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .introdiv {
+        color: #fff;
+        font-size: 12px;
+        padding-bottom: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .destaquetitle {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 5%;
+        margin-bottom: 5%; 
+    }
+
+    .destaquetitle1 {
+        text-align: center;
+        font-size: 12px;
+        color: #F15A41;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+    
+    /* footer */
+    .footer {
+        background-color: #0C1941;
+        position: absolute;
+        width: 100%;
+    }
+    .doubleuparrow {
+        width: 16px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+    }
+    .whitelogo {
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .classyfootinfo {
+        font-size: 12px;
+        color: #fff;
+        margin-left: 0;
+        margin-top: 20px;
+        padding-right: 0;
+        text-align: center;
+    }
+    .classyfootsocialinfo {
+        color: #fff;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .socialtitle {
+        font-size: 12px;
+        padding-right: 0;
+    }
+    .extrainfo {
+        text-align: center;
+        color: #fff;
+        font-size: 9px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+        
+}

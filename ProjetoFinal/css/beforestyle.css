@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* logotipo da página */
+.classylogo {
+    width: 200px;
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-bottom: 10px;
+}
+/* end do logotipo da página */
+
+/* navigation bar */
+.classynavbar {
+    width: 100%;
+    height: 70px;
+    display: inline;
+}
+.classynavbar a {
+    text-align: center;
+    text-decoration: none;
+}
+/* navigation bar */
+
+/* nav text */
+.inicio {
+    color: #0C1941;
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+.registo {
+    color: #0C1941;
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+.lingua {
+    color: #0C1941;
+    float: right;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+.anglearrowdown {
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+}
+.arrowcriar{
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+}
+/* end nav text */
+
+/* iniciar sessão box*/
+.backgroundsection {
+    background-image: url(../Imagens/iniciarpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.erromsg {
+    color: red;
+    font-size: 12px;
+    
+}
+.erromsga {
+    color: green;
+    font-size: 12px;
+    
+}
+
+.iniciarbox{
+    border-radius: 20px;
+    border: none;
+    width: 50%;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0C1941;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.iniciartitle {
+    font-size: 25px;
+    color: #fff;
+    padding-top: 7%;
+}
+
+.crieconta {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.criecontahigh {
+    color: #F15A41;
+}
+
+/* box form */
+.emailbtn {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.pswbtn {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* end box form */
+
+/* botão entrar */
+.criarbtn {
+    border-radius: 10px;
+    border: none;
+    background-color: #F15A41;
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+}
+/* end botão entrar */
+
+
+
+
+@media only screen and (max-width: 729px) {
+
+    .classylogo {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    }
+
+    .classynavbar {
+        width: 100%;
+        height: 70px;
+        display: inline;
+        
+    }
+    .classynavbar a {
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    /* nav text iphone 7*/
+    .inicio {
+        float: left;
+        width: 33%;
+        text-align: center;
+        color: #0C1941;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .registo {
+        float: 0;
+        width: 33%;
+        text-align: center;
+        color: #0C1941;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .lingua {
+        float: right;
+        width: 33%;
+        color: #0C1941;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .anglearrowdown {
+        margin-left: 4px;
+        width: 5px;
+        height: 5px;
+    }
+    .arrowcriar{
+        margin-left: 4px;
+        width: 5px;
+        height: 5px;
+    }
+    /* end nav text */
+
+    .iniciarbox{
+        border-radius: 10px;
+        border: none;
+        width: 70%;
+        margin: 0 auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        background-color: #0C1941;
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+
+    .iniciartitle {
+        font-size: 14px;
+        color: #fff;
+        padding-top: 12%;
+    }
+    
+    .crieconta {
+        font-size: 9px;
+        color: #fff;
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    /* box form */
+    .emailbtn {
+        font-size: 12px;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        margin-top: 10%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .pswbtn {
+        font-size: 12px;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        margin-top: 10%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    /* end box form */
+
+    /* botão entrar */
+    .criarbtn {
+        font-size: 12px;
+        border-radius: 10px;
+        border: none;
+        background-color: #F15A41;
+        color: #fff;
+        text-align: center;
+        margin-top: 10%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: none;
+    }
+    /* end botão entrar */
+
+}

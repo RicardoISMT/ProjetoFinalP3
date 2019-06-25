@@ -1,0 +1,23 @@
+
+Universidade: Instituto Superior Miguel Torga
+
+Trabalho elaborado por
+Aluno: Ricardo Duarte Malva
+Número: 10985
+Email: Ricardomalva97@hotmail.com
+
+Curso: Multimédia
+Unidade curricular: Programação III
+Docente: Frederico Fonseca
+
+Conteúdos da pasta:
+ClassyRent - Laravel API
+ClassyRentF - Aplicação Android Studio
+Projeto Final - website ClassyRent
+registar - Base de dados
+swagger - API swagger editor
+
+Ano lectivo: 2018/2019
+
+
+

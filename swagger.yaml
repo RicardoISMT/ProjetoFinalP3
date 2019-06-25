@@ -1,0 +1,528 @@
+swagger: "2.0"
+info:
+  title: "ClassyRent API"
+  description: "API desenvolvido para o website do ClassyRent"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    name: "API Support"
+    url: "http://www.example.com/support"
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+  version: "1.0.0"
+schemes:
+- "https"
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+
+
+
+
+paths:
+  /users:
+    post:
+      tags:
+      - "users"
+      summary: "Adicionar um novo usuário."
+      description: "adicionar uma conta."
+      operationId: "addUsers"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/users"
+      responses:
+        200:
+          description: "Conta criada com sucesso!"
+        201:
+          description: "Conta criada com sucesso!"
+        302:
+          description: "Conta já se encontra criada!"
+        405:
+          description: "Erro a criar conta!"
+  
+
+    put:
+      tags:
+      - "users"
+      summary: "Editar uma conta existente."
+      description: "editar uma conta."
+      operationId: "updateUsers"
+      parameters:
+      - name: "pass"
+        in: "path"
+        description: "palavra-passe que irá ser editada."
+        required: true
+        type: string
+      - in: "body"
+        name: "body"
+        description: "editar as palavra-passe."
+        required: true
+        schema:
+          $ref: "#/definitions/users"
+      responses:
+        202:
+          description: "Conta atualizada"
+        304:
+          description: "Atualização não realizada!"
+        400:
+          description: "Palavra-passe incorreta!"
+        404:
+          description: "Conta não encontrada!"
+
+    delete:
+      tags:
+      - "users"
+      summary: "Eliminar uma conta."
+      description: ""
+      operationId: "deleteUsers"
+      parameters:
+      - name: "api_key"
+        in: "header"
+        required: false
+        type: "string"
+      - name: "email"
+        in: "path"
+        description: "Email que irá ser eliminado."
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "pass"
+        in: "path"
+        description: "Palavra-passe que irá ser eliminada."
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Conta eliminada!"
+        202:
+          description: "Conta eliminada!"
+        400:
+          description: "Usuário inserido inválido!"
+        404:
+          description: "Usuário não encontrado!"
+
+  /users/login:
+    get:
+      tags:
+      - "users"
+      summary: "Login do usuário."
+      description: "Entrar com uma conta existente."
+      operationId: "loginUsers"
+      parameters:
+      - name: "email"
+        in: "query"
+        description: "Email do usuário para realizar o Login."
+        required: true
+        type: "string"
+      - name: "pass"
+        in: "query"
+        description: "Palavra-passe para realizar o Login."
+        required: true
+        type: "string"
+      responses:
+        default:
+          description: "Operação realizada com sucesso!"
+        200:
+          description: "Operação realizada com sucesso!"
+          schema:
+            type: "string"
+          headers:
+            X-Rate-Limit:
+              type: "integer"
+              format: "int32"
+              description: ""
+            X-Expires-After:
+              type: "string"
+              format: "date-time"
+              description: "date in UTC when token expires!"
+        302:
+          description: "Usuário encontrado!"
+        400:
+          description: "Email ou palavra-passe inválida!"
+  
+  /users/logout:
+    get:
+      tags:
+      - "users"
+      summary: "Encerra a sessão da conta ativa atual."
+      description: ""
+      operationId: "logoutUsers"
+      parameters: []
+      responses:
+        200:
+          description: "Operação realizada com sucesso!"
+        202:
+          description: "Operação realizada com sucesso!"
+        400:
+          description: "Operação realizada sem sucesso!"
+        401:
+          description: "Operação não autorizada!"
+        500:
+          description: "Erro!"
+
+  /places:
+    post:
+      tags:
+      - "places"
+      summary: "Adicionar um novo alojamento."
+      description: ""
+      operationId: "addPlaces"
+      parameters:
+      - name: "alojamento"
+        in: "path"
+        description: "Alojamento que irá ser adicionado."
+        required: true
+        type: "string"
+        
+      - name: "cidade"
+        in: "path"
+        description: "Cidade que irá ser adicionada."
+        required: true
+        type: "string"
+        
+      - name: "uni"
+        in: "path"
+        description: "Universidade que irá ser adicionada."
+        required: true
+        type: "string"
+        
+      - name: "distancia"
+        in: "path"
+        description: "Distância que irá ser adicionada."
+        required: true
+        type: "string"
+        
+      - name: "preco"
+        in: "path"
+        description: "Preço que irá ser adicionado."
+        required: true
+        type: "string"
+        
+      - name: "mail"
+        in: "path"
+        description: "Email que irá ser adicionado."
+        required: true
+        type: "string"
+        
+      - name: "descricao"
+        in: "path"
+        description: "Descrição que irá ser adicionada."
+        required: true
+        type: "string"
+        
+      - name: "foto"
+        in: "path"
+        description: "Foto que irá ser adicionada."
+        required: true
+        type: "string"
+
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/places"
+      responses:
+        200:
+          description: "Alojamento criado com sucesso!"
+        201:
+          description: "Alojamento criado com sucesso!"
+        302:
+          description: "Alojamento já se encontra criado!"
+        405:
+          description: "Invalid input!"
+
+    get:
+      tags:
+      - "places"
+      summary: "Lista de todos os alojamentos."
+      description: "alojamentos criados."
+      operationId: "index"
+      responses:
+        200:
+          description: "Operação realizada com sucesso!"
+          schema:
+            $ref: "#/definitions/places"
+        202:
+          description: "Operação realizada com sucesso!"
+        400:
+          description: "Operação realizada sem sucesso!"
+        401:
+          description: "Operação não autorizada!"
+        404:
+          description: "Alojamento não encontrado!"
+        500:
+          description: "Erro!"
+
+    put:
+      tags:
+      - "places"
+      summary: "Editar um alojamento existente."
+      description: "Só se pode realizar pelo usuário ativo."
+      operationId: "updatePlaces"
+      parameters:
+      - name: "alojamento"
+        in: "path"
+        description: "Alojamento que irá ser atualizado."
+        required: true
+        type: "string"
+
+      - name: "cidade"
+        in: "path"
+        description: "Cidade que irá ser atualizada."
+        required: true
+        type: "string"
+ 
+      - name: "uni"
+        in: "path"
+        description: "Universidade que irá ser atualizada."
+        required: true
+        type: "string"
+
+      - name: "distancia"
+        in: "path"
+        description: "Distância que irá ser atualizada."
+        required: true
+        type: "string"
+
+      - name: "preco"
+        in: "path"
+        description: "Preço que irá ser atualizado."
+        required: true
+        type: "string"
+ 
+      - name: "mail"
+        in: "path"
+        description: "Email que irá ser atualizado."
+        required: true
+        type: "string"
+
+      - name: "descricao"
+        in: "path"
+        description: "Descrição que irá ser atualizada."
+        required: true
+        type: "string"
+ 
+      - name: "foto"
+        in: "path"
+        description: "Foto que irá ser atualizada."
+        required: true
+        type: "string"
+
+      - in: "body"
+        name: "body"
+        description: "Usuário atualizado."
+        required: true
+        schema:
+          $ref: "#/definitions/places"
+      responses:
+        200:
+          description: "Conta atualizada!"
+        202:
+          description: "Conta atualizada!"
+        304:
+          description: "Atualização falhada!"
+        400:
+          description: "Informação inválida!"
+        404:
+          description: "Informação não encontrada!"
+        
+ 
+    delete:
+      tags:
+      - "places"
+      summary: "Eliminar um alojamento existente."
+      description: "Só se pode realizar pelo usuário ativo."
+      operationId: "deletePlaces"
+      parameters:
+      - name: "alojamento"
+        in: "path"
+        description: "Alojamento que irá ser eliminado."
+        required: true
+        type: "string"
+
+      - name: "cidade"
+        in: "path"
+        description: "Cidade que irá ser eliminada."
+        required: true
+        type: "string"
+ 
+      - name: "uni"
+        in: "path"
+        description: "Universidade que irá ser eliminada."
+        required: true
+        type: "string"
+
+      - name: "distancia"
+        in: "path"
+        description: "Distância que irá ser eliminada."
+        required: true
+        type: "string"
+
+      - name: "preco"
+        in: "path"
+        description: "Preço que irá ser eliminado."
+        required: true
+        type: "string"
+ 
+      - name: "mail"
+        in: "path"
+        description: "Email que irá ser eliminado."
+        required: true
+        type: "string"
+
+      - name: "descricao"
+        in: "path"
+        description: "Descrição que irá ser eliminada."
+        required: true
+        type: "string"
+ 
+      - name: "foto"
+        in: "path"
+        description: "Foto que irá ser eliminada."
+        required: true
+        type: "string"
+
+      responses:
+        200:
+          description: "Alojamento eliminado!"
+        202:
+          description: "Alojamento eliminado!"
+        204:
+          description: "Alojamento não existe!"
+        400:
+          description: "Alojamento inválido!"
+        404:
+          description: "Alojamento não encontrado!"
+
+  /places/alojamento:
+    get:
+      tags:
+      - "places"
+      summary: "Procurar 'places' por 'alojamento'"
+      description: ""
+      operationId: "getPlacesByAlojamento"
+      parameters:
+      - in: path
+        name: alojamento
+        description: "The parameters of the place collection."
+        required: true
+        type: integer
+      responses:
+        200:
+          description: "Operação realizada com sucesso!"
+        201:
+          description: "Operação realizada com sucesso!"
+        400:
+          description: "Alojamento inserido inválido!"
+        404:
+          description: "Alojamento não encontrado!"
+
+  /places/cidade:
+    get:
+      tags:
+      - "places"
+      summary: "Procurar 'places' por 'cidade'"
+      description: ""
+      operationId: "getPlacesByCidade"
+      parameters:
+      - in: path
+        name: cidade
+        description: "The parameters of the place collection."
+        required: true
+        type: integer
+      responses:
+        200:
+          description: "Operação realizada com sucesso!"
+        201:
+          description: "Operação realizada com sucesso!"
+        400:
+          description: "Alojamento inserido inválido!"
+        404:
+          description: "Alojamento não encontrado na cidade escolhida!"
+
+  /places/uni:
+    get:
+      tags:
+      - "places"
+      summary: "Procurar 'places' por 'uni'"
+      description: ""
+      operationId: "getPlacesByUni"
+      parameters:
+      - in: path
+        name: uni
+        description: "The parameters of the place collection."
+        required: true
+        type: integer
+      responses:
+        200:
+          description: "Operação realizada com sucesso!"
+        201:
+          description: "Operação realizada com sucesso!"
+        400:
+          description: "Alojamento inserido inválido!"
+        404:
+          description: "Alojamento não encontrado na universidade escolhida!"
+
+definitions:
+  places:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+        description: Unique identifier representing a specific Place.
+      alojamento:
+        type: string
+        description: Tipo de alojamento.
+      cidade:
+        type: string
+        description: Cidade onde se localiza o alojamento.
+      uni:
+        type: string
+        description: Universidade perto do alojamento.
+      distancia:
+        type: string
+        description: Distância do alojamento.
+      preco:
+        type: number
+        description: Preço do alojamento.
+      mail:
+        type: string
+        description: Email do proprietário do alojamento.
+      descricao:
+        type: string
+        description: Descrição do alojamento.
+      foto:
+        type: string
+        description: Fotografia do alojamento.
+
+  users:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      email:
+        type: string
+      pass:
+        type: string
+      person:
+        type: string
+      userStatus:
+        type: integer
+        format: int32
+        description: User Status
+    xml:
+      name: Users
+externalDocs:
+  description: Find out more about Swagger
+  url: "http://swagger.io"

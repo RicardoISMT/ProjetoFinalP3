@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* logotipo da página */
+.classylogo {
+    width: 200px;
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-bottom: 10px;
+}
+/* end do logotipo da página */
+
+/* navigation bar */
+.classynavbar {
+    width: 100%;
+    height: 70px;
+    display: inline;
+}
+.classynavbar a {
+    text-align: center;
+    text-decoration: none;
+}
+/* navigation bar */
+
+/* nav text */
+.inicio {
+    color: #0C1941;
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+.registo {
+    color: #0C1941;
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+.lingua {
+    color: #0C1941;
+    float: right;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+.anglearrowdown {
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+}
+.addcriar{
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 1px;
+}
+.addcriar1{
+    margin-left: 4px;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 3px;
+}
+
+/* end nav text */
+
+.backgroundsection {
+    background-image: url(../Imagens/addimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    min-height: 600px;
+}
+.erromsg {
+    color: red;
+    font-size: 12px;
+    
+}
+.erromsga {
+    color: green;
+    font-size: 12px;
+    
+}
+
+/* iniciar sessão box*/
+.adicionarbox{
+    border-radius: 20px;
+    border: none;
+    width: 50%;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0C1941;
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+
+.adicionartitle {
+    font-size: 25px;
+    color: #fff;
+    padding-top: 7%;
+}
+
+/* box form */
+.inserirbox {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.descricaobox {
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    margin-top: 5%;
+    padding-left: 30px;
+    padding-right: 237px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.escolherbox {
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    margin-top: 5%;
+    padding-left: 30px;
+    padding-right: 0;
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+/* end box form */
+
+/* botão entrar */
+.criarbtn {
+    border-radius: 10px;
+    border: none;
+    background-color: #F15A41;
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    margin-bottom: 5%;
+}
+.criarbtnremove {
+    border-radius: 10px;
+    border: none;
+    background-color: #050A18;
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    margin-bottom: 5%;
+}
+/* end botão entrar */
+
+
+
+
+@media only screen and (max-width: 1140px) {
+
+    .classylogo {
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        }
+    .classynavbar {
+        width: 100%;
+        height: 70px;
+        display: inline;
+            
+    }
+    .classynavbar a {
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    /* nav text iphone 7*/
+    .inicio {
+        float: left;
+        width: 33%;
+        text-align: center;
+        color: #0C1941;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .registo {
+        float: 0;
+        width: 33%;
+        text-align: center;
+        color: #0C1941;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .lingua {
+        float: right;
+        width: 33%;
+        color: #0C1941;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .anglearrowdown {
+        margin-left: 4px;
+        width: 5px;
+        height: 5px;
+    }
+    .arrowcriar{
+        margin-left: 4px;
+        width: 5px;
+        height: 5px;
+    }
+    /* end nav text */  
+    
+    .adicionarbox{
+        border-radius: 10px;
+        border: none;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        background-color: #0C1941;
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+    .adicionartitle {
+        font-size: 14px;
+        color: #fff;
+        padding-top: 12%;
+    }
+    .inserirbox {
+        margin-right: 5px;
+        padding-left: 20px;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        margin-top: 5%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .descricaobox {
+        width: 82%;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        margin-top: 5%;
+        padding-left: 0px;
+        padding-right: 0;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+    .escolherbox {
+        color: #fff;
+        font-size: 12px;
+        border-radius: 5px;
+        border: none;
+        text-align: left;
+        margin-top: 5%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
+    /* botão entrar */
+    .criarbtn {
+        font-size: 12px;
+        border-radius: 10px;
+        border: none;
+        background-color: #F15A41;
+        color: #fff;
+        text-align: center;
+        margin-top: 7%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: none;
+    }
+    
+    .criarbtnremove {
+        font-size: 12px;
+        border-radius: 10px;
+        border: none;
+        background-color: #050A18;
+        color: #fff;
+        text-align: center;
+        margin-top: 7%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: none;
+    }
+    /* end botão entrar */
+}
